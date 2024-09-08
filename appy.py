@@ -79,7 +79,7 @@ def predict():
         # ทำนายผลด้วยโมเดล
         predictions = model.predict(processed_image)
         class_labels = ['Acne', 'Clear', 'Comedo', 'Wrinkles']
-
+        #12345
         predicted_class = class_labels[np.argmax(predictions)]
         confidence = np.max(predictions) * 100
 
